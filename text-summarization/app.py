@@ -21,7 +21,7 @@ def summarize_text(text, model, tokenizer, max_length=512, num_beams=5):
     return tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 
 
-model_path = 'results_t5base/checkpoint-4450'
+model_path = 'results_t5base/checkpoint-2000'
 model = T5ForConditionalGeneration.from_pretrained(model_path)
 tokenizer = T5Tokenizer.from_pretrained('results_t5base')
 
